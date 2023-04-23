@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 
 class TypeArticleFactory extends Factory
 {
+    protected $model = TypeArticle::class;
+
     /**
      * Define the model's default state.
      *
@@ -14,8 +16,7 @@ class TypeArticleFactory extends Factory
     public function definition()
     {
         return [
-          "nom"=>array_rand(["immobilier","television","salle","voiture"], 1)
-
+            "nom" => array_rand(["Immobiler", "Television", "Salle", "Voiture"], 1)
         ];
     }
 }

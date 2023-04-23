@@ -15,12 +15,10 @@ class TypeArticleSeeder extends Seeder
     public function run()
     {
         DB::table("type_articles")->insert([
-
-            ["nom"=>"voiture"],
-            ["nom"=>"immobilier"],
-            ["nom"=>"appareils electroniques"],
-            ["nom"=>"salle"],
-
+            ["nom"=> "Voiture"],
+            ["nom"=> "Immobilier"],
+            ["nom"=> "Appareils Electroniques"],
+            ["nom"=> "Salle"]
         ]);
     }
 }
